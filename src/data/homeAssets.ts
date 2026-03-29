@@ -26,7 +26,7 @@ export const homeAssets = {
   trendingIwcWatch: '/home/images/trending-iwc-pilot-watch.png',
   trendingWhiteSneakers: '/home/images/trending-white-sneakers.png',
   trendingHighTopSneaker: '/home/images/trending-high-top-sneaker.png',
-  newArrivalsBanner: '/home/new-arrivals-banner.png',
+  newArrivalsBanner: '/home/images/sale-banner.png',
   sponsored: '/home/sponsored.png',
 } as const
 
