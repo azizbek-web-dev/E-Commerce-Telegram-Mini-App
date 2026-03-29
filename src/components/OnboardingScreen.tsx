@@ -90,7 +90,7 @@ export function OnboardingScreen({ onFinish }: Props) {
         </div>
         <div className={styles.footerEnd}>
           <button type="button" className={styles.next} onClick={next}>
-            Next
+            {index >= total - 1 ? 'Get Started' : 'Next'}
           </button>
         </div>
       </footer>
