@@ -7,4 +7,6 @@ npm install
 npm run dev
 ```
 
+Splash: `public/brand/splash.png` (shu nom bilan almashtirasiz).
+
 Backend keyin ulaymiz.
