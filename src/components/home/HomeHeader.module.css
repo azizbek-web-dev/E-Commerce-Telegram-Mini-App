@@ -39,26 +39,18 @@
 .brand {
   display: flex;
   align-items: center;
-  gap: 8px;
-  flex: 1;
   justify-content: center;
+  flex: 1;
   min-width: 0;
 }
 
 .brandMark {
-  width: 36px;
+  display: block;
   height: 36px;
-  border-radius: 50%;
-  object-fit: cover;
+  width: auto;
+  max-width: min(168px, 46vw);
+  object-fit: contain;
   flex-shrink: 0;
-}
-
-.brandName {
-  font-family: Georgia, 'Times New Roman', serif;
-  font-size: 22px;
-  font-weight: 600;
-  color: #2563eb;
-  letter-spacing: -0.02em;
 }
 
 .avatar {
