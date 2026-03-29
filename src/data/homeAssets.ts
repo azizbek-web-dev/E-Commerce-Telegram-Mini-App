@@ -28,6 +28,37 @@ export const homeAssets = {
   trendingHighTopSneaker: '/home/images/trending-high-top-sneaker.png',
   newArrivalsBanner: '/home/images/sale-banner.png',
   sponsored: '/home/images/sponsored-shoes.png',
+  /** Product listing grid (renamed from unsplash uploads) */
+  listingJordanSneaker: '/home/images/listing-jordan-sneaker.png',
+  listingFlareDress: '/home/images/listing-flare-dress.png',
+  listingWinterHoodie: '/home/images/listing-winter-hoodie.png',
+  listingBlackDress: '/home/images/listing-black-dress.png',
+  listingRealme7: '/home/images/listing-realme-7.png',
+  listingDenimDress: '/home/images/listing-denim-dress.png',
+  listingNikonD7200: '/home/images/listing-nikon-d7200.png',
+  listingSonyPs4: '/home/images/listing-sony-ps4.png',
+  listingPinkEmbroideredDress: '/home/images/listing-pink-embroidered-dress.png',
+  listingBlackJacket: '/home/images/listing-black-jacket.png',
+  listingMensFormalShoes: '/home/images/listing-mens-formal-shoes.png',
+  listingMensStarryShirt: '/home/images/listing-mens-starry-shirt.png',
+  /** Bottom nav (mirrored in `navBottomIcons.tsx` as inline SVG for active color) */
+  navHome: '/home/icons/nav-home.svg',
+  navWishlist: '/home/icons/nav-wishlist.svg',
+  navCart: '/home/icons/nav-cart.svg',
+  navSearch: '/home/icons/nav-search.svg',
+  navSettings: '/home/icons/nav-settings.svg',
+  /** Product detail page */
+  pdpHero1: '/home/images/pdp-hero-1.png',
+  pdpHero2: '/home/images/pdp-hero-2.png',
+  pdpHero3: '/home/images/pdp-hero-3.png',
+  pdpBack: '/home/icons/pdp-back.png',
+  pdpHeaderCart: '/home/icons/pdp-header-cart.png',
+  pdpCarouselNext: '/home/icons/pdp-carousel-next.png',
+  pdpEyeSimilar: '/home/icons/pdp-eye-similar.png',
+  pdpCompareDoc: '/home/icons/pdp-compare-doc.png',
+  pdpHandBuy: '/home/icons/pdp-hand-buy.png',
+  pdpGoCart: '/home/icons/pdp-go-cart.png',
+  pdpBadgeRow: '/home/icons/pdp-badge-row.png',
 } as const
 
 /** Header mark: reuse brand splash until you add a dedicated home logo */

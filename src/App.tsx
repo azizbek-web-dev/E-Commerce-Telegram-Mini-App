@@ -4,7 +4,7 @@ import { SplashScreen } from './components/SplashScreen'
 import { WelcomeHero } from './components/WelcomeHero'
 import { ONBOARDING_DONE_KEY } from './data/onboardingSlides'
 import { WELCOME_DONE_KEY } from './data/welcome'
-import { HomePage } from './pages/HomePage'
+import { ShopScreens } from './pages/ShopScreens'
 import { TelegramProvider } from './providers/TelegramProvider'
 
 type Phase = 'splash' | 'onboarding' | 'welcome' | 'app'
@@ -55,7 +55,7 @@ export function App() {
       {phase === 'welcome' ? <WelcomeHero onContinue={onWelcomeDone} /> : null}
       {phase === 'app' ? (
         <main>
-          <HomePage />
+          <ShopScreens />
         </main>
       ) : null}
     </TelegramProvider>

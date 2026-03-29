@@ -36,7 +36,11 @@ const products = [
   },
 ] as const
 
-export function HomeTrendingProducts() {
+type Props = {
+  onViewAll?: () => void
+}
+
+export function HomeTrendingProducts({ onViewAll }: Props) {
   return (
     <section className={styles.section} aria-labelledby="trending-title">
       <div className={styles.bar}>
@@ -53,7 +57,7 @@ export function HomeTrendingProducts() {
             <span className={styles.date}>Last Date 29/02/22</span>
           </div>
         </div>
-        <button type="button" className={styles.viewAll}>
+        <button type="button" className={styles.viewAll} onClick={onViewAll}>
           View all
           <span className={styles.viewAllArrow} aria-hidden>
             →

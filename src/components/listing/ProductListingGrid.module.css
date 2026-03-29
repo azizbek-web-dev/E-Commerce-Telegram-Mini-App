@@ -1,0 +1,16 @@
+/**
+ * Two-column flow: tall / short product images stack in columns so they sit
+ * side by side without forced equal row heights (masonry-style).
+ */
+.grid {
+  column-count: 2;
+  column-gap: 12px;
+  padding-bottom: 8px;
+}
+
+.cell {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  margin-bottom: 12px;
+  -webkit-column-break-inside: avoid;
+}

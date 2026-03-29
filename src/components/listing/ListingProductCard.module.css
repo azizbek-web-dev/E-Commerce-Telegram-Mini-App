@@ -1,0 +1,121 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 0;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid #ebebeb;
+  overflow: hidden;
+}
+
+.cardInteractive {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.cardInteractive:active {
+  opacity: 0.96;
+}
+
+.thumb {
+  margin: 0;
+  background: #f3f4f6;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 112px;
+  max-height: 280px;
+  padding: 6px 4px;
+}
+
+.thumbImg {
+  width: 100%;
+  height: auto;
+  max-height: 268px;
+  object-fit: contain;
+  display: block;
+}
+
+.body {
+  padding: 10px 12px 12px;
+}
+
+.title {
+  margin: 0 0 4px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #111827;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.desc {
+  margin: 0 0 8px;
+  font-size: 11px;
+  line-height: 1.35;
+  color: #6b7280;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.price {
+  margin: 0 0 6px;
+  font-size: 15px;
+  font-weight: 800;
+  color: #111827;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  font-size: 11px;
+  color: #6b7280;
+}
+
+.starRow {
+  display: inline-flex;
+  align-items: center;
+  gap: 1px;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.starOn {
+  color: #fbbf24;
+  font-size: 12px;
+}
+
+.starOff {
+  color: #d1d5db;
+  font-size: 12px;
+}
+
+.starHalfWrap {
+  display: inline-block;
+  width: 0.65em;
+  overflow: hidden;
+  vertical-align: -0.05em;
+}
+
+.starHalf {
+  display: inline-block;
+  color: #fbbf24;
+  font-size: 12px;
+  width: 200%;
+  text-align: left;
+}
+
+.reviews {
+  color: #9ca3af;
+  font-weight: 500;
+}

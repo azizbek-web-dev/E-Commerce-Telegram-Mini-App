@@ -1,0 +1,67 @@
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 16px;
+  padding: 4px 0 10px;
+}
+
+.barCompact {
+  justify-content: flex-end;
+}
+
+.count {
+  font-size: 14px;
+  font-weight: 800;
+  color: #111827;
+  letter-spacing: -0.02em;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.actionBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border: 1px solid #ebebeb;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.actionBtn:active {
+  background: #fafafa;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.iconWrap {
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
+}
+
+.actionIcon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  flex-shrink: 0;
+  opacity: 0.9;
+}
+
+.actionLabel {
+  font-size: 13px;
+  font-weight: 500;
+  color: #111827;
+  line-height: 1;
+  white-space: nowrap;
+}
