@@ -1,11 +1,12 @@
 .wrap {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 12px 14px;
-  border-radius: 12px;
-  border: 1px solid #e5e7eb;
-  background: #fafafa;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07), 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
 .leadIcon,
@@ -20,6 +21,7 @@
   width: 20px;
   height: 20px;
   object-fit: contain;
+  opacity: 0.72;
 }
 
 .trailIcon {
@@ -40,5 +42,6 @@
 }
 
 .input::placeholder {
-  color: #9ca3af;
+  color: #b4b8c0;
+  font-weight: 400;
 }

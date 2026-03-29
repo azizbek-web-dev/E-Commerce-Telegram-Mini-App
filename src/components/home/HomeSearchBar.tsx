@@ -11,7 +11,7 @@ export function HomeSearchBar() {
       <input
         className={styles.input}
         type="search"
-        placeholder="Search any Product..."
+        placeholder="Search any Product.."
         readOnly
         aria-readonly="true"
       />
