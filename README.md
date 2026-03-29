@@ -9,5 +9,6 @@ npm run dev
 
 - Splash: `public/brand/splash.png`
 - Onboarding: `shop-rafiki-1.png`, `consulting-pana-1.png`, `bag-rafiki-1.png`
+- Welcome hero background: `public/brand/unsplash.png`
 
 Backend keyin ulaymiz.

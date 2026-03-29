@@ -1,12 +1,14 @@
 import { useCallback, useState } from 'react'
 import { OnboardingScreen } from './components/OnboardingScreen'
 import { SplashScreen } from './components/SplashScreen'
+import { WelcomeHero } from './components/WelcomeHero'
 import { ONBOARDING_DONE_KEY } from './data/onboardingSlides'
+import { WELCOME_DONE_KEY } from './data/welcome'
 import { TelegramProvider } from './providers/TelegramProvider'
 
-type Phase = 'splash' | 'onboarding' | 'app'
+type Phase = 'splash' | 'onboarding' | 'welcome' | 'app'
 
-function shouldSkipOnboarding() {
+function skipOnboarding() {
   try {
     return localStorage.getItem(ONBOARDING_DONE_KEY) === '1'
   } catch {
@@ -14,14 +16,32 @@ function shouldSkipOnboarding() {
   }
 }
 
+function skipWelcome() {
+  try {
+    return localStorage.getItem(WELCOME_DONE_KEY) === '1'
+  } catch {
+    return false
+  }
+}
+
+function goAfterSplash(): Phase {
+  if (!skipOnboarding()) return 'onboarding'
+  if (!skipWelcome()) return 'welcome'
+  return 'app'
+}
+
 export function App() {
   const [phase, setPhase] = useState<Phase>('splash')
 
   const onSplashDone = useCallback(() => {
-    setPhase(shouldSkipOnboarding() ? 'app' : 'onboarding')
+    setPhase(goAfterSplash())
   }, [])
 
   const onOnboardingDone = useCallback(() => {
+    setPhase(skipWelcome() ? 'app' : 'welcome')
+  }, [])
+
+  const onWelcomeDone = useCallback(() => {
     setPhase('app')
   }, [])
 
@@ -31,6 +51,7 @@ export function App() {
       {phase === 'onboarding' ? (
         <OnboardingScreen onFinish={onOnboardingDone} />
       ) : null}
+      {phase === 'welcome' ? <WelcomeHero onContinue={onWelcomeDone} /> : null}
       {phase === 'app' ? <main /> : null}
     </TelegramProvider>
   )
