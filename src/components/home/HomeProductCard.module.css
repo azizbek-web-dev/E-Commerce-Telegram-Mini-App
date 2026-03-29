@@ -72,6 +72,10 @@
 }
 
 .meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
   margin: 0;
   font-size: 11px;
   color: #6b7280;

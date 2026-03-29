@@ -5,24 +5,22 @@ import styles from './HomeDealOfTheDay.module.css'
 
 const products = [
   {
-    image: homeAssets.dealProduct1,
+    image: homeAssets.dealProductKurta,
     title: 'Women Printed Kurta',
-    description: 'Amet minim mollit non deserunt ullamco est sit.',
-    price: '₹1,500',
-    oldPrice: '₹3,000',
-    discount: '50% Off',
-    rating: '4.8',
-    reviews: '2,56,890',
+    description: 'Neque porro quisquam est qui dolorem ipsum quia',
+    price: '₹1500',
+    oldPrice: '₹2499',
+    discount: '40% Off',
+    reviews: '56890',
   },
   {
-    image: homeAssets.dealProduct2,
+    image: homeAssets.dealProductHrxSneaker,
     title: 'HRX by Hrithik Roshan',
-    description: 'Amet minim mollit non deserunt ullamco est sit.',
-    price: '₹2,499',
-    oldPrice: '₹4,999',
+    description: 'Neque porro quisquam est qui dolorem ipsum quia',
+    price: '₹2499',
+    oldPrice: '₹4999',
     discount: '50% Off',
-    rating: '4.7',
-    reviews: '89,120',
+    reviews: '344567',
   },
 ] as const
 

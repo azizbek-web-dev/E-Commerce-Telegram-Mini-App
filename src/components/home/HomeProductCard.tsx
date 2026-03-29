@@ -8,7 +8,8 @@ export type HomeProductCardProps = {
   price: string
   oldPrice: string
   discount: string
-  rating: string
+  /** Omit to show only stars + review count (Deal row style). */
+  rating?: string
   reviews: string
 }
 
@@ -37,9 +38,15 @@ export function HomeProductCard({
       <p className={styles.meta}>
         <span className={styles.stars} aria-hidden>
           ★★★★☆
-        </span>{' '}
-        <span className={styles.rating}>{rating}</span>
-        <span className={styles.reviews}>({reviews})</span>
+        </span>
+        {rating != null && rating !== '' ? (
+          <>
+            {' '}
+            <span className={styles.rating}>{rating}</span>
+            {' '}
+          </>
+        ) : null}
+        <span className={styles.reviews}>{reviews}</span>
       </p>
     </article>
   )
