@@ -6,8 +6,8 @@ const categories = [
   { key: 'beauty', label: 'Beauty', src: homeAssets.categoryBeauty },
   { key: 'fashion', label: 'Fashion', src: homeAssets.categoryFashion },
   { key: 'kids', label: 'Kids', src: homeAssets.categoryKids },
-  { key: 'men', label: 'Men', src: homeAssets.categoryMen },
-  { key: 'women', label: 'Women', src: homeAssets.categoryWomen },
+  { key: 'mens', label: 'Mens', src: homeAssets.categoryMen },
+  { key: 'womens', label: 'Womens', src: homeAssets.categoryWomen },
 ] as const
 
 export function HomeAllFeatured() {

@@ -11,6 +11,6 @@ npm run dev
 - Onboarding: `shop-rafiki-1.png`, `consulting-pana-1.png`, `bag-rafiki-1.png`
 - Welcome hero background: `public/brand/unsplash.png`
 
-Home assets: `src/data/homeAssets.ts` — `public/home/icons/` (menu, search, micrafon, sort, filter), `public/home/images/` (profile), plus hero/categories/etc. Missing files use gray placeholders.
+Home assets: `src/data/homeAssets.ts` — `public/home/icons/`, `public/home/images/` (profile, beauty, fashion, kids, mens, womens, …). Missing files use gray placeholders.
 
 Backend keyin ulaymiz.
