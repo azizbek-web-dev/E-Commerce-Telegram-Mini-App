@@ -48,9 +48,6 @@ export function HomeDealOfTheDay() {
         {products.map((p) => (
           <HomeProductCard key={p.title} {...p} />
         ))}
-        <div className={styles.moreChev} aria-hidden>
-          ›
-        </div>
       </div>
     </section>
   )
