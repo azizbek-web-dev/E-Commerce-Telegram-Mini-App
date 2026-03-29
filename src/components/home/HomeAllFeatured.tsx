@@ -19,16 +19,12 @@ export function HomeAllFeatured() {
         </h2>
         <div className={styles.actions}>
           <button type="button" className={styles.chip}>
-            <span className={styles.chipIcon} aria-hidden>
-              ↕
-            </span>
             Sort
+            <AssetImg src={homeAssets.iconSort} alt="" className={styles.chipIconImg} />
           </button>
           <button type="button" className={styles.chip}>
-            <span className={styles.chipIcon} aria-hidden>
-              ⏚
-            </span>
             Filter
+            <AssetImg src={homeAssets.iconFilter} alt="" className={styles.chipIconImg} />
           </button>
         </div>
       </div>

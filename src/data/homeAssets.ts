@@ -6,6 +6,8 @@ export const homeAssets = {
   iconMenu: '/home/icons/menu.png',
   iconSearch: '/home/icons/search.png',
   iconMic: '/home/icons/micrafon.png',
+  iconSort: '/home/icons/sort.png',
+  iconFilter: '/home/icons/filter.png',
   headerAvatar: '/home/images/profile.png',
   heroBanner: '/home/hero-banner-1.png',
   categoryBeauty: '/home/cat-beauty.png',
