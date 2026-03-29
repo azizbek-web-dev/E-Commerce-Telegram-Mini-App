@@ -13,8 +13,8 @@ export const ONBOARDING_SLIDES: OnboardingSlide[] = [
       'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.',
   },
   {
-    image: '/brand/shop-rafiki-2.png',
-    title: 'Track orders',
+    image: '/brand/consulting-pana-1.png',
+    title: 'Make Payment',
     body:
       'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.',
   },

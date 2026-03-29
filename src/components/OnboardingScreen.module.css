@@ -78,11 +78,38 @@
 }
 
 .footer {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(72px, 1fr) auto minmax(72px, 1fr);
   align-items: center;
-  justify-content: space-between;
   flex-shrink: 0;
-  gap: 16px;
+  gap: 8px;
+}
+
+.footerStart {
+  justify-self: start;
+}
+
+.footerEnd {
+  justify-self: end;
+}
+
+.footerSpacer {
+  display: inline-block;
+  min-width: 48px;
+}
+
+.prev {
+  border: none;
+  background: none;
+  padding: 10px 4px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #9ca3af;
+  cursor: pointer;
+}
+
+.prev:active {
+  opacity: 0.8;
 }
 
 .dots {
@@ -111,7 +138,7 @@
   padding: 10px 8px;
   font-size: 16px;
   font-weight: 700;
-  color: #e11d48;
+  color: #e93c4f;
   cursor: pointer;
 }
 

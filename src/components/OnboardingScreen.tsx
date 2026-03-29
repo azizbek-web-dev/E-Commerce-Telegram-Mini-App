@@ -47,6 +47,10 @@ export function OnboardingScreen({ onFinish }: Props) {
     setIndex((i) => i + 1)
   }, [complete, index, total])
 
+  const prev = useCallback(() => {
+    setIndex((i) => Math.max(0, i - 1))
+  }, [])
+
   return (
     <div className={styles.root}>
       <header className={styles.header}>
@@ -59,12 +63,21 @@ export function OnboardingScreen({ onFinish }: Props) {
       </header>
 
       <div className={styles.body}>
-        <SlideFigure src={slide.image} />
+        <SlideFigure key={slide.image} src={slide.image} />
         <h1 className={styles.title}>{slide.title}</h1>
         <p className={styles.text}>{slide.body}</p>
       </div>
 
       <footer className={styles.footer}>
+        <div className={styles.footerStart}>
+          {index > 0 ? (
+            <button type="button" className={styles.prev} onClick={prev}>
+              Prev
+            </button>
+          ) : (
+            <span className={styles.footerSpacer} aria-hidden />
+          )}
+        </div>
         <div className={styles.dots} role="tablist" aria-label="Onboarding steps">
           {ONBOARDING_SLIDES.map((_, i) => (
             <span
@@ -75,9 +88,11 @@ export function OnboardingScreen({ onFinish }: Props) {
             />
           ))}
         </div>
-        <button type="button" className={styles.next} onClick={next}>
-          Next
-        </button>
+        <div className={styles.footerEnd}>
+          <button type="button" className={styles.next} onClick={next}>
+            Next
+          </button>
+        </div>
       </footer>
     </div>
   )
