@@ -23,8 +23,9 @@ export const homeAssets = {
   promoHeelsYellowBar: '/home/icons/promo-heels-yellow-bar.png',
   promoHeelsSparkles: '/home/icons/promo-heels-sparkles.png',
   promoHeelsShoes: '/home/images/promo-heels-shoes.png',
-  trending1: '/home/trending-1.png',
-  trending2: '/home/trending-2.png',
+  trendingIwcWatch: '/home/images/trending-iwc-pilot-watch.png',
+  trendingWhiteSneakers: '/home/images/trending-white-sneakers.png',
+  trendingHighTopSneaker: '/home/images/trending-high-top-sneaker.png',
   newArrivalsBanner: '/home/new-arrivals-banner.png',
   sponsored: '/home/sponsored.png',
 } as const
