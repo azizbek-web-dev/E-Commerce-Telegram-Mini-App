@@ -11,6 +11,6 @@ npm run dev
 - Onboarding: `shop-rafiki-1.png`, `consulting-pana-1.png`, `bag-rafiki-1.png`
 - Welcome hero background: `public/brand/unsplash.png`
 
-Home assets: `src/data/homeAssets.ts` — includes `sale-banner.png` (New Arrivals), trending images, icons, etc. Missing files use gray placeholders.
+Home assets: `src/data/homeAssets.ts` — includes `sale-banner.png`, `sponsored-shoes.png`, trending images, icons, etc. Missing files use gray placeholders.
 
 Backend keyin ulaymiz.

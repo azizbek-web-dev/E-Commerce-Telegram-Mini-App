@@ -11,7 +11,6 @@ export function HomeSponsored() {
       <div className={styles.card}>
         <div className={styles.media}>
           <AssetImg src={homeAssets.sponsored} alt="" className={styles.mediaImg} />
-          <span className={styles.badge}>UP TO 50% OFF</span>
         </div>
         <button type="button" className={styles.footer}>
           <span>up to 50% Off</span>

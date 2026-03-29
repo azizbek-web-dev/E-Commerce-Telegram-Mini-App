@@ -27,7 +27,7 @@ export const homeAssets = {
   trendingWhiteSneakers: '/home/images/trending-white-sneakers.png',
   trendingHighTopSneaker: '/home/images/trending-high-top-sneaker.png',
   newArrivalsBanner: '/home/images/sale-banner.png',
-  sponsored: '/home/sponsored.png',
+  sponsored: '/home/images/sponsored-shoes.png',
 } as const
 
 /** Header mark: reuse brand splash until you add a dedicated home logo */
