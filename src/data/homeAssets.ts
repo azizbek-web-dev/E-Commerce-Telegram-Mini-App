@@ -18,7 +18,7 @@ export const homeAssets = {
   categoryWomen: '/home/images/womens.png',
   dealProductKurta: '/home/images/deal-product-kurta.png',
   dealProductHrxSneaker: '/home/images/deal-product-hrx-sneaker.png',
-  promoSpecial: '/home/promo-special-offer.png',
+  promoSpecial: '/home/images/offers.png',
   promoHeels: '/home/promo-flat-heels.png',
   trending1: '/home/trending-1.png',
   trending2: '/home/trending-2.png',

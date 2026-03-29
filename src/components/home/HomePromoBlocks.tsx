@@ -9,10 +9,15 @@ export function HomePromoBlocks() {
         <div className={styles.specialThumb}>
           <AssetImg src={homeAssets.promoSpecial} alt="" className={styles.specialImg} />
         </div>
-        <div>
-          <h3 className={styles.cardTitle}>Special Offer</h3>
+        <div className={styles.cardBody}>
+          <div className={styles.titleRow}>
+            <h3 className={styles.cardTitle}>Special Offers</h3>
+            <span className={styles.titleEmoji} aria-hidden>
+              😱
+            </span>
+          </div>
           <p className={styles.cardText}>
-            We make sure you get the offer you need at best price.
+            We make sure you get the offer you need at best prices
           </p>
         </div>
       </div>
