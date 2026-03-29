@@ -8,6 +8,7 @@ export const homeAssets = {
   iconMic: '/home/icons/micrafon.png',
   iconSort: '/home/icons/sort.png',
   iconFilter: '/home/icons/filter.png',
+  iconDealTimer: '/home/icons/deal-timer.png',
   headerAvatar: '/home/images/profile.png',
   heroBanner: '/home/images/1ehoh_1.png',
   categoryBeauty: '/home/images/beauty.png',

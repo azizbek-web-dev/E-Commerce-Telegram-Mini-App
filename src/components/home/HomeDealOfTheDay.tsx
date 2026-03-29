@@ -1,4 +1,5 @@
 import { homeAssets } from '../../data/homeAssets'
+import { AssetImg } from './AssetImg'
 import { HomeProductCard } from './HomeProductCard'
 import styles from './HomeDealOfTheDay.module.css'
 
@@ -29,14 +30,20 @@ export function HomeDealOfTheDay() {
   return (
     <section className={styles.section} aria-labelledby="deal-title">
       <div className={styles.bar}>
-        <h2 id="deal-title" className={styles.barTitle}>
-          Deal of the Day
-        </h2>
-        <span className={styles.timer} aria-hidden>
-          🕐 22h 55m 20s remaining
-        </span>
+        <div className={styles.barLeft}>
+          <h2 id="deal-title" className={styles.barTitle}>
+            Deal of the Day
+          </h2>
+          <div className={styles.timerRow}>
+            <AssetImg src={homeAssets.iconDealTimer} alt="" className={styles.timerIcon} />
+            <span className={styles.timer}>22h 55m 20s remaining</span>
+          </div>
+        </div>
         <button type="button" className={styles.viewAll}>
           View all
+          <span className={styles.viewAllArrow} aria-hidden>
+            →
+          </span>
         </button>
       </div>
       <div className={styles.row}>
