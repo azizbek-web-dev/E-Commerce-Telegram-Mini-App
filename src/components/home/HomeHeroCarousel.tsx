@@ -6,6 +6,9 @@ export function HomeHeroCarousel() {
   return (
     <section className={styles.section} aria-label="Promo banner">
       <div className={styles.card}>
+        <div className={styles.bg} aria-hidden>
+          <AssetImg src={homeAssets.heroBanner} alt="" className={styles.bgImg} />
+        </div>
         <div className={styles.copy}>
           <p className={styles.badge}>50-40% OFF</p>
           <p className={styles.line}>Now in (product)</p>
@@ -14,9 +17,6 @@ export function HomeHeroCarousel() {
             Shop Now
             <span aria-hidden> →</span>
           </button>
-        </div>
-        <div className={styles.visual}>
-          <AssetImg src={homeAssets.heroBanner} alt="" className={styles.heroImg} />
         </div>
       </div>
       <div className={styles.dots} aria-hidden>
