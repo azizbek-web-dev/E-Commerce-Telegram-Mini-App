@@ -1,4 +1,5 @@
 import { homeAssets } from '../../data/homeAssets'
+import { AssetImg } from './AssetImg'
 import { HomeProductCard } from './HomeProductCard'
 import styles from './HomeTrendingProducts.module.css'
 
@@ -29,14 +30,24 @@ export function HomeTrendingProducts() {
   return (
     <section className={styles.section} aria-labelledby="trending-title">
       <div className={styles.bar}>
-        <h2 id="trending-title" className={styles.barTitle}>
-          Trending Products
-        </h2>
-        <span className={styles.date} aria-hidden>
-          📅 12 Aug 2025
-        </span>
+        <div className={styles.barLeft}>
+          <h2 id="trending-title" className={styles.barTitle}>
+            Trending Products
+          </h2>
+          <div className={styles.dateRow}>
+            <AssetImg
+              src={homeAssets.iconTrendingCalendar}
+              alt=""
+              className={styles.dateIcon}
+            />
+            <span className={styles.date}>Last Date 29/02/22</span>
+          </div>
+        </div>
         <button type="button" className={styles.viewAll}>
           View all
+          <span className={styles.viewAllArrow} aria-hidden>
+            →
+          </span>
         </button>
       </div>
       <div className={styles.row}>

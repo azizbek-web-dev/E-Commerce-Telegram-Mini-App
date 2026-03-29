@@ -6,39 +6,72 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 8px 12px;
-  padding: 12px 14px;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
   border-radius: 12px 12px 0 0;
-  background: #fce7f3;
-  color: #111827;
+  background: #ff7387;
+  color: #fff;
+}
+
+.barLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
 }
 
 .barTitle {
   margin: 0;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 800;
-  flex: 1 1 auto;
-  min-width: 0;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.dateRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dateIcon {
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .date {
   font-size: 11px;
   font-weight: 600;
-  color: #6b7280;
+  color: rgba(255, 255, 255, 0.95);
   white-space: nowrap;
 }
 
 .viewAll {
-  margin-left: auto;
-  padding: 4px 0;
-  border: none;
-  background: none;
-  color: #f83758;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  background: transparent;
+  color: #fff;
   font-size: 12px;
   font-weight: 700;
   cursor: pointer;
-  text-decoration: underline;
-  text-underline-offset: 2px;
+  flex-shrink: 0;
+}
+
+.viewAll:active {
+  opacity: 0.9;
+}
+
+.viewAllArrow {
+  font-size: 14px;
+  line-height: 1;
 }
 
 .row {
@@ -48,7 +81,7 @@
   padding: 14px 4px 8px;
   margin: 0 -4px;
   background: #fff;
-  border: 1px solid #fce7f3;
+  border: 1px solid #ffd6de;
   border-top: none;
   border-radius: 0 0 12px 12px;
   scrollbar-width: none;

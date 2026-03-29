@@ -9,6 +9,7 @@ export const homeAssets = {
   iconSort: '/home/icons/sort.png',
   iconFilter: '/home/icons/filter.png',
   iconDealTimer: '/home/icons/deal-timer.png',
+  iconTrendingCalendar: '/home/icons/trending-calendar.png',
   headerAvatar: '/home/images/profile.png',
   heroBanner: '/home/images/1ehoh_1.png',
   categoryBeauty: '/home/images/beauty.png',
