@@ -3,7 +3,10 @@
  * Missing files show a gray placeholder via AssetImg.
  */
 export const homeAssets = {
-  headerAvatar: '/home/avatar-profile.png',
+  iconMenu: '/home/icons/menu.png',
+  iconSearch: '/home/icons/search.png',
+  iconMic: '/home/icons/micrafon.png',
+  headerAvatar: '/home/images/profile.png',
   heroBanner: '/home/hero-banner-1.png',
   categoryBeauty: '/home/cat-beauty.png',
   categoryFashion: '/home/cat-fashion.png',

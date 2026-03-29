@@ -16,14 +16,24 @@
   padding: 0;
   border: none;
   border-radius: 50%;
-  background: transparent;
-  color: #111827;
   cursor: pointer;
+}
+
+.iconBtn {
+  background: #f3f4f6;
+  color: #111827;
 }
 
 .avatarBtn {
   overflow: hidden;
   border: 1px solid #e5e7eb;
+  background: #fff;
+}
+
+.menuIcon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
 }
 
 .brand {
