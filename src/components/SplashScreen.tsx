@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import styles from './SplashScreen.module.css'
 
-/** Logo + yozuv: faylni shu joyga qo‘ying — `public/brand/splash.png` */
+/** Brand mark: `public/brand/splash.png` */
 export const SPLASH_IMAGE = '/brand/splash.png'
 
 const MIN_VISIBLE_MS = 1800
